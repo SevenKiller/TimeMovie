@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "launchViewController.h"
+#import "FirstViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,39 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    /**
+     *  ios6.0以及以前的版本 修改状态栏颜色的方法
+     *  UIApplication  应用程序
+     *  获取当前运行的这个应用程序 sharedApplication
+     */
+    UIApplication *app = [UIApplication sharedApplication];
+    //设置状态栏的颜色
+    [app setStatusBarStyle:UIStatusBarStyleLightContent];
+    //设置状态栏的隐藏和现实
+//    [app setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    
+//    显示启动界面
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor lightGrayColor];
+    [self.window makeKeyAndVisible];
+    
+    //判断是否是第一次运行
+    //储存一些用户配置
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    //通过一个Key 来获取一个值 如果没有找到此值 则返回NO
+    BOOL first = [userDefaults boolForKey:@"first"];
+    if (!first)
+    {
+        //第一次运行程序
+        self.window.rootViewController = [[FirstViewController alloc] init];
+    }
+    else
+    {
+        self.window.rootViewController = [[launchViewController alloc] init];
+    }
+
+    
     return YES;
 }
 

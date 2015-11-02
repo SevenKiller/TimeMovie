@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CinemaCell" rowHeight="171" id="KGk-i7-Jjw" customClass="CinemaCell">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="307" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="影院名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63F-Je-7yI">
+                        <rect key="frame" x="7" y="9" width="199" height="22"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.11201817995954955" blue="0.086492157498548883" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HZ-IP-LJ0">
+                        <rect key="frame" x="236" y="11" width="34" height="20"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.98360558710000001" green="0.51734010909999995" blue="0.063896981539999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="北京市西城区" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvB-g1-UqT">
+                        <rect key="frame" x="7" y="35" width="218" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.63575257439999999" green="0.83156418300000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="￥35.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bq-oS-gmj">
+                        <rect key="frame" x="226" y="32" width="60" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.1465741672769785" green="0.87475077783465949" blue="0.90305397727272729" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VG0-5m-fP9">
+                        <rect key="frame" x="239" y="56" width="43" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.17572995916271428" green="0.31465883425863184" blue="0.90305397727272729" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cinemaCouponMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="kKZ-qk-xV7">
+                        <rect key="frame" x="8" y="60" width="17" height="17"/>
+                        <animations/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cinemaSeatMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="qTK-9p-niA">
+                        <rect key="frame" x="33" y="60" width="17" height="17"/>
+                        <animations/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cinemaGrouponMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ra4-lX-1Rw">
+                        <rect key="frame" x="58" y="60" width="17" height="17"/>
+                        <animations/>
+                    </imageView>
+                </subviews>
+                <animations/>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" red="0.01019965278" green="0.01019965278" blue="0.01019965278" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="addressLabel" destination="ZvB-g1-UqT" id="e9I-Co-dH3"/>
+                <outlet property="cinemaLabel" destination="63F-Je-7yI" id="psy-bD-YPP"/>
+                <outlet property="coupon" destination="kKZ-qk-xV7" id="wJM-Jp-coY"/>
+                <outlet property="gradeLabel" destination="6HZ-IP-LJ0" id="WXh-a8-w6u"/>
+                <outlet property="group" destination="Ra4-lX-1Rw" id="bSa-Hc-XFk"/>
+                <outlet property="lowPriceLabel" destination="6Bq-oS-gmj" id="8G4-Aq-7dC"/>
+                <outlet property="seat" destination="qTK-9p-niA" id="W2g-2U-l11"/>
+            </connections>
+            <point key="canvasLocation" x="371" y="186"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cinemaCouponMark.png" width="17" height="17"/>
+        <image name="cinemaGrouponMark.png" width="17" height="17"/>
+        <image name="cinemaSeatMark.png" width="17" height="17"/>
+    </resources>
+</document>
